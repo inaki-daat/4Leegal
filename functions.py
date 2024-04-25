@@ -84,7 +84,7 @@ def description(text):
 def gpt_call(prompt, system):
     client = OpenAI()
     response = client.chat.completions.create(
-                        model="gpt-4-0125-preview",
+                        model="gpt-4-turbo",
                         messages=[
                             {"role": "system", "content": system},
                             {"role": "user", "content": prompt},
